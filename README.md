@@ -312,7 +312,7 @@ created_at: :timestamp
 ```
 
 It describes a `created_at` attribute that can take any value of type :timestamp.
-See (built-in types)[].
+See [built-in types](#built-in-data-types).
 
 ##### type: object
 
