@@ -26,7 +26,7 @@ Messaging API, covering COMMAND, QUERY and EVENT communication patterns.
 The API specification is designed to document COMMAND, QUERY and EVENT
 communication patterns.
 
-See: [Messaging layer properties]()
+See: [Messaging layer properties](https://github.com/kukushkin/mimi-messaging/blob/master/docs/Messaging_Layer_Properties.md)
 
 ### Request
 
