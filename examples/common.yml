@@ -1,0 +1,14 @@
+#
+# Common custom data types used in examples
+#
+
+# A generic ID data type
+#
+# A string of 32 hexadecimal characters.
+#
+# Example:
+#   "a63f42de4dea4e4b0a7d4e3559f0fe84"
+#
+:uid:
+  :string:
+    pattern: "^[0-9a-f]{32}$"

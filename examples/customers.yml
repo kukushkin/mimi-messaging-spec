@@ -1,0 +1,61 @@
+#
+# "customers" resource API
+#
+
+# Customer representation
+:customer:
+  id: :uid
+  first_name: :string
+  last_name: :string
+  created_at: :timestamp
+  updated_at: :timestamp
+
+# Creates a new Customer
+#
+# Broadcasts: customers#created, customers#updated
+#
+customers/create:
+  params:
+    id?: :uid    # optional attribute, a client-defined ID
+    first_name: :string
+    last_name: :string
+  return: :customer
+
+# Updates an existing Customer
+#
+# Broadcasts: customers#updated
+#
+customers/update:
+  params:
+    id: :uid
+    first_name?: :string
+    last_name?: :string
+  return: :customer
+
+# Broadcasts the current state of the Customer with given ID
+#
+# Broadcasts: customers#updated
+#
+customers/broadcast:
+  params:
+    id: :uid
+  # no "return" here indicates this can only be invoked as COMMAND
+
+# Returns a Customer with a given ID
+#
+customers/show:
+  params:
+    id: :uid
+  return: :customer
+
+# Returns a list of all existing Customers
+#
+customers/list:
+  params:
+  return:
+    list:
+      :array: :customer
+
+# EVENTs
+customers#created: :customer
+customers#updated: :customer
