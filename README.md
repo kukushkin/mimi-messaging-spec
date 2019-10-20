@@ -303,8 +303,6 @@ Here the `enabled` attribute of the message is always a boolean value of `true`.
 <attribute_name>: <type_reference>
 ```
 
-*type_reference* as in the message schema is a
-
 A *type reference*, as in the message schema, is a string literal which starts
 with ":" followed by some type name. It refers some built-in or a custom data type.
 
